@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 import Book from './book';
 
 const Books = () => {
-  const [items, setItems] = useState([{ id: 1, title: 'Book title', author: 'Book author' }]);
+  const [items, setItems] = useState([{ id: 'v45w5', title: 'Book title', author: 'Book author' }]);
   const handleDelete = (itemId) => setItems(items.filter((item) => item.id !== itemId));
   const handleSubmit = (event) => {
     event.preventDefault();
