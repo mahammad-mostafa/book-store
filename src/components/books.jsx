@@ -18,7 +18,7 @@ const Books = () => {
   return (
     <section>
       <h2>Books List</h2>
-      <ul>{items.map((item) => <Book key={item.id} book={item} handler={handleDelete} />)}</ul>
+      <div>{items.map((item) => <Book key={item.id} book={item} handler={handleDelete} />)}</div>
       <form onSubmit={handleSubmit}>
         <h3>Add New Book</h3>
         <input type="text" placeholder="Book title" name="title" autoComplete="on" required />
