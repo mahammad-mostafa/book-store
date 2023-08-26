@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handler }) => (
-  <li>
+  <article>
     <h3>{book.title}</h3>
     <p>{book.author}</p>
     <button type="button" onClick={() => handler(book.id)}>Delete</button>
-  </li>
+  </article>
 );
 
 Book.propTypes = {

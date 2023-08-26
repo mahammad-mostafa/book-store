@@ -29,6 +29,7 @@ Check the below contents for further details about this project.
 
 This project is a simple book store app built with `ReactJS` framework.
 It applies `Components` and `Hooks` along with `GitFlow` workflow.
+State management is implemeneted using `Redux` & `Redux Toolkit`.
 Navigation inside the app is implemented using `React Router`.
 Styling inside the project is done with `CSS Modules`.
 All project dynamic files are contained in `src` directory while static assets are in `public` directory.
@@ -37,6 +38,7 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
 📌 **Tech Stack:**
 - Framework used is `ReactJS`
+- State management by `Redux Toolkit`
 - Page structure is built with `JSX`
 - Styling is built with `CSS3`
 - Dynamic content is built with `ES6` JavaScript
@@ -103,7 +105,7 @@ npm run build
 
 Some additional features I may implement in the project:
 - [ ] Using `CSS` preprocessors and their relevant loaders
-- [ ] Implement advanced `Hooks` features for like `useMemo`
+- [ ] Implement advanced `Hooks` features like `useMemo`
 
 <p align="right"><a href="#title">back to top</a></p>
 

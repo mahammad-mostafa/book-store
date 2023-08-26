@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 import Book from './book';
 
 const Books = () => {
-  const [items, setItems] = useState([{ id: 1, title: 'Book title', author: 'Book author' }]);
+  const [items, setItems] = useState([{ id: 'v45w5', title: 'Book title', author: 'Book author' }]);
   const handleDelete = (itemId) => setItems(items.filter((item) => item.id !== itemId));
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,7 +18,7 @@ const Books = () => {
   return (
     <section>
       <h2>Books List</h2>
-      <ul>{items.map((item) => <Book key={item.id} book={item} handler={handleDelete} />)}</ul>
+      <div>{items.map((item) => <Book key={item.id} book={item} handler={handleDelete} />)}</div>
       <form onSubmit={handleSubmit}>
         <h3>Add New Book</h3>
         <input type="text" placeholder="Book title" name="title" autoComplete="on" required />
