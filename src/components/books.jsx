@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { v4 } from 'uuid';
+import { useDispatch, useSelector } from 'react-redux';
+import { add } from '../redux/books/booksSlice';
 import Book from './book';
 
 const Books = () => {
-  const [items, setItems] = useState([{ id: 'v45w5', title: 'Book title', author: 'Book author' }]);
-  const handleDelete = (itemId) => setItems(items.filter((item) => item.id !== itemId));
+  const items = useSelector((state) => state.books.list);
+  const dispatch = useDispatch();
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     if (form.title.value !== '' && form.author.value !== '') {
-      const book = { id: v4(), title: form.title.value, author: form.author.value };
-      setItems([...items, book]);
+      const book = { title: form.title.value, author: form.author.value };
+      dispatch(add(book));
       form.reset();
     }
   };
@@ -18,7 +18,7 @@ const Books = () => {
   return (
     <section>
       <h2>Books List</h2>
-      <div>{items.map((item) => <Book key={item.id} book={item} handler={handleDelete} />)}</div>
+      <div>{items.map((item) => <Book key={item.id} book={item} />)}</div>
       <form onSubmit={handleSubmit}>
         <h3>Add New Book</h3>
         <input type="text" placeholder="Book title" name="title" autoComplete="on" required />

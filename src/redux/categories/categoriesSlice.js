@@ -12,4 +12,4 @@ const categoriesReducer = createSlice({
 
 export const { check } = categoriesReducer.actions;
 
-export default categoriesReducer.reducers;
+export default categoriesReducer.reducer;
