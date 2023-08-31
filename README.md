@@ -30,6 +30,7 @@ Check the below contents for further details about this project.
 This project is a simple book store app built with `ReactJS` framework.
 It applies `Components` and `Hooks` along with `GitFlow` workflow.
 State management is implemeneted using `Redux` & `Redux Toolkit`.
+External data fetching is done with `Thunk` api & `Axois`.
 Navigation inside the app is implemented using `React Router`.
 Styling inside the project is done with `CSS Modules`.
 All project dynamic files are contained in `src` directory while static assets are in `public` directory.
@@ -43,10 +44,13 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 - Styling is built with `CSS3`
 - Dynamic content is built with `ES6` JavaScript
 - Bundling is done with `WebPack`
+- Data fetching is handled by `Axios`
 
 📌 **Key Features:**
 - Single page app with all content loaded dynamically
 - Responsive layout with all screen sizes
+- Books list is persistent & fetched from remote server
+- Adding & removing books updates the api
  
 <p align="right"><a href="#title">back to top</a></p>
 
