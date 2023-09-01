@@ -26,7 +26,7 @@ const Book = ({ book }) => {
           </li>
         </ul>
       </div>
-      <Chapter progress={Math.floor(book.title.length / 0.5)} chapter={book.title.length} />
+      <Chapter number={book.title.length} />
     </article>
   );
 };

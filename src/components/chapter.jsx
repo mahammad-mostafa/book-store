@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import Styles from '../styles/chapter.module.css';
 
-const Chapter = ({ progress, chapter }) => {
+const Chapter = ({ number }) => {
+  const progress = Math.min(Math.floor(number / 0.3), 100);
+  const chapter = Math.max(Math.floor(number / 3), 1);
   const indicator = `radial-gradient(closest-side, var(--light-color) 84%, transparent 86% 98%), conic-gradient(var(--accent-color) ${progress}%, var(--border-color) 0)`;
   return (
     <div className={Styles.chapters}>
@@ -30,6 +32,6 @@ const Chapter = ({ progress, chapter }) => {
   );
 };
 
-Chapter.propTypes = { progress: PropTypes.number.isRequired, chapter: PropTypes.number.isRequired };
+Chapter.propTypes = { number: PropTypes.number.isRequired };
 
 export default Chapter;
