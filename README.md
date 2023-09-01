@@ -37,6 +37,9 @@ All project dynamic files are contained in `src` directory while static assets a
 The live build is generated inside the `build` directory.
 Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
+📌 **Live Demo:**
+- See the project live from [here](https://book-store-vg8x.onrender.com).
+
 📌 **Tech Stack:**
 - Framework used is `ReactJS`
 - State management by `Redux Toolkit`
@@ -51,6 +54,7 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 - Responsive layout with all screen sizes
 - Books list is persistent & fetched from remote server
 - Adding & removing books updates the api
+- Filtering books according to categories
  
 <p align="right"><a href="#title">back to top</a></p>
 

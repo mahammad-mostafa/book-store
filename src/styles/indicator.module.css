@@ -1,0 +1,32 @@
+.block {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loader {
+  width: 100px;
+  color: var(--accent-color);
+  animation: spinner 1s infinite linear;
+}
+
+.inline {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.error {
+  width: 100px;
+}
+
+.text {
+  font: italic 1.5rem var(--secondary-light);
+}
+
+@keyframes spinner {
+  0% { transform: rotateZ(360deg); }
+  1000% { transform: rotateZ(0deg); }
+}

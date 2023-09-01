@@ -59,9 +59,9 @@ const bookReducer = createSlice({
       state.updated = true;
     });
     builder.addMatcher(({ type }) => type.endsWith('rejected'), (state, { error }) => {
-      if (error.name !== 'AbortError') {
+      if (error.message !== 'Aborted') {
         state.loading = false;
-        state.error = error.name;
+        state.error = error.message;
       }
     });
   },
