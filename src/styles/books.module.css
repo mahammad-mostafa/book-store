@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.line {
+  border: 1px solid var(--border-color);
+  margin: 40px auto;
+}
