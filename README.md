@@ -2,7 +2,7 @@
 
 <!-- TITLE -->
 
-# 🏷️ Book Store App
+# 🏷️ Book Store
 
 This is the third project of the third module in the **Microverse** program.
 <br/>
